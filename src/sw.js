@@ -60,7 +60,7 @@ self.addEventListener('fetch', (event) => {
   // Modo local (node serve.mjs): o servidor tem a ponte com a API real e a chave
   // do .env — deixa ele responder os /api em vez de servir o espelho congelado.
   // Em hospedagem (domínio próprio) isso nunca entra e o espelho manda como antes.
-  if (/^(localhost|127\.0\.0\.1)$/.test(url.hostname) && url.pathname.startsWith('/api/')) return;
+  if (/^(localhost|127\.0\.0\.1|robsonsms\.onrender\.com)$/.test(url.hostname) && url.pathname.startsWith('/api/')) return;
 
   if (req.method !== 'GET') {
     // POST /api/site/visita e companhia: o site não lê a resposta, só engole

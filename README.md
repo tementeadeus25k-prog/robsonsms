@@ -18,19 +18,39 @@ respondidos com o conteúdo congelado no momento da captura.
 | `cd public && npm start` | idem |
 | jogar `public/` numa hospedagem estática | funciona também: lá o `/api` fica a cargo do `sw.js` |
 
-**No ar:** https://robsonsms.surge.sh (Surge.sh, a mesma hospedagem grátis do
-`ledger-site`). Para atualizar depois de editar qualquer coisa em `public/`:
+**No ar em dois lugares:**
+
+| URL | o que é |
+|---|---|
+| **https://robsonsms.onrender.com** | **o site completo**: servidor Node + backend (contas, login, recarga, compra, admin) — o `serve.mjs` roda lá e serve site e API juntos |
+| https://robsonsms.surge.sh | cópia **estática** para só dar uma olhada (sem login); os `/api` ficam a cargo do `sw.js` com o espelho congelado |
+
+O código publicado mora no repositório público
+**https://github.com/tementeadeus25k-prog/robsonsms**. Para atualizar a versão online:
+
+```bat
+cd "C:\Users\Royal\Documents\Default Project\allansms-clone"
+git add -A
+git commit -m "o que mudou"
+git push            :: o Render faz o deploy sozinho (autodeploy por commit)
+```
+
+Configuração do serviço Render (`render.yaml` documenta o mesmo): plano **free**,
+runtime **node**, start `node public/serve.mjs`, health check `/health`, e as variáveis
+de ambiente definidas no dashboard (a `API_KEY` é segredo — **nunca vai no repositório**;
+o `.env` está no `.gitignore`). O banco `data/db.json` fica num disco *efêmero*: sobrevive
+enquanto o serviço roda, mas **zera a cada novo deploy** (contas online precisam ser
+recriadas — suficiente para testes; para produção o passo seguinte é um Postgres).
+
+Para atualizar a versão **estática** do Surge depois de editar qualquer coisa em `public/`:
 
 ```bat
 surge "C:\Users\Royal\Documents\Default Project\allansms-clone\public" robsonsms.surge.sh
 ```
 
-Lá os `/api` ficam a cargo do `sw.js` com o espelho congelado — a ponte com a API
-real (chave, painel logado) só existe localmente, no `serve.mjs`.
-
 Precisa do Node.js instalado só para servir localmente (o site em si não precisa
-de build, npm install nem backend). Para hospedar, suba o conteúdo de `public/` na
-raiz do domínio — o bundle original pede os próprios arquivos por caminho absoluto
+de build, npm install nem backend). A hospedagem estática serve o conteúdo de `public/`
+na raiz do domínio — o bundle original pede os próprios arquivos por caminho absoluto
 (`/assets/...`), então não funciona em subpasta. `_redirects`, `netlify.toml`,
 `vercel.json` e `404.html` já vão dentro para as hospedagens estáticas mais comuns.
 
@@ -119,12 +139,15 @@ por hora/dia/mês).
 
 ### O que muda (e o que não muda) online
 
-Em **hospedagem estática** (Surge) nada disso roda: sem processo Node, o `sw.js`
-continua respondendo os `/api` com o espelho congelado e o login volta a ficar só de
-fachada — igual ao original. Para o backend funcionar *online* (amigos cadastrando e
-comprando pelo https://robsonsms.surge.sh), falta hospedar o `serve.mjs` num host com
-Node e disco persistente (ex.: Render free). Os arquivos estão prontos para isso; a
-ponte e o backend já usam só variáveis de ambiente.
+**No Render** (`robsonsms.onrender.com`) tudo roda de verdade: é o `serve.mjs` +
+`backend.mjs` num processo Node, servindo site e API na mesma origem — então o login, a
+recarga e a compra funcionam pelo ar, exatamente como no `localhost`. A única diferença
+prática: o disco é *efêmero*, então o `data/db.json` zera a cada deploy (contas precisam
+ser recriadas; suficiente p/ testes).
+
+**No Surge** (`robsonsms.surge.sh`) só serve como vitrine estática: sem processo Node, o
+`sw.js` responde os `/api` com o espelho congelado e o login fica só de fachada — igual ao
+original. É por isso que existe a versão do Render: mesma marca, mas com o motor ligado.
 
 | teste local | resultado |
 |---|---|
@@ -165,9 +188,8 @@ Isto depende de um backend com processo e disco. **Localmente, o `backend.mjs` c
 principal** (contas, login, saldo, recarga, compra, cancelamento, chaves, backoffice —
 tudo em `data/db.json`). O que ainda fica fora:
 
-* **login/conta online** — no Surge (estático) o formulário aparece e valida, mas não há
-  servidor para criar a conta; é preciso hospedar o `serve.mjs` num host com Node
-  (ex.: Render free) para funcionar pelo ar.
+* **login/conta no Surge** — a cópia estática continua só de vitrine; o login real pelo
+  ar fica na versão do Render (`robsonsms.onrender.com`), que roda o `serve.mjs` + backend.
 * **PIX de verdade** — a recarga auto-confirma por software (`AUTO_PIX=1`); plugar um
   gateway real (Mercado Pago, PagSeguro…) é o próximo passo natural.
 * **aluguel, afiliados, promoções e o resto do backoffice** — respondem com dados neutros/
