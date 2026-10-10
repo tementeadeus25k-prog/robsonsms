@@ -1,0 +1,12 @@
+{
+  "name": "robsonsms",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "ROBSONSMS — site + backend (serve.mjs) na mesma origem",
+  "main": "server.mjs",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}
