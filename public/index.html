@@ -99,7 +99,15 @@
     </noscript>
   
     <script>
-      if ('serviceWorker' in navigator && !/^file:/.test(location.protocol)) {
+      var _temBackend = /^(localhost|127\.0\.0\.1|robsonsms\.onrender\.com)$/.test(location.hostname);
+      if (_temBackend && 'serviceWorker' in navigator) {
+        // backend no ar (local/Render): dispensa service worker e mata versões antigas,
+        // para nenhum sw velho "sequestrar" os /api e quebrar o login.
+        navigator.serviceWorker.getRegistrations().then(function (rs) {
+          return Promise.all(rs.map(function (r) { return r.unregister(); }));
+        }).catch(function () {});
+      }
+      if (!_temBackend && 'serviceWorker' in navigator && !/^file:/.test(location.protocol)) {
         var rsAntes = !!navigator.serviceWorker.controller;
         navigator.serviceWorker.addEventListener('controllerchange', function () {
           if (rsAntes && !sessionStorage.getItem('robsonsms-sw-v2')) { sessionStorage.setItem('robsonsms-sw-v2', '1'); location.reload(); }
