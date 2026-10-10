@@ -1,0 +1,8 @@
+raw/
+robsonsms/
+data/
+.env
+*.zip
+*.png
+node_modules/
+.DS_Store

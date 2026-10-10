@@ -1,0 +1,528 @@
+{
+ "_fonte": "https://allansms.com",
+ "_capturado_em": "2026-10-08",
+ "_nota": "tabela que o sw.js e o serve.mjs usam; nenhuma rota aponta para fora",
+ "rotas": {
+  "/": {
+   "file": "index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/login": {
+   "file": "login/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/cadastro": {
+   "file": "cadastro/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/esqueci-senha": {
+   "file": "esqueci-senha/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/redefinir-senha": {
+   "file": "redefinir-senha/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/painel": {
+   "file": "painel/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/perfil": {
+   "file": "perfil/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/recarga": {
+   "file": "recarga/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/pedidos": {
+   "file": "pedidos/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/recargas": {
+   "file": "recargas/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/historico": {
+   "file": "historico/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/aluguel": {
+   "file": "aluguel/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/meus-alugueis": {
+   "file": "meus-alugueis/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/pedido/x": {
+   "file": "pedido/x/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/aluguel/x": {
+   "file": "aluguel/x/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/proxies": {
+   "file": "proxies/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/afiliados": {
+   "file": "afiliados/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/numeros": {
+   "file": "numeros/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/ajuda": {
+   "file": "ajuda/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/admin": {
+   "file": "admin/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/docs-api": {
+   "file": "docs-api/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/status": {
+   "file": "status/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/termos": {
+   "file": "termos/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/privacidade": {
+   "file": "privacidade/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/assets/Account-ByamsZpU.js": {
+   "file": "assets/Account-ByamsZpU.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/assets/Admin-DzPgqxV4.js": {
+   "file": "assets/Admin-DzPgqxV4.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/assets/Afiliados-CqUsb-Nd.js": {
+   "file": "assets/Afiliados-CqUsb-Nd.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/assets/animacao-DEFl0xIm.js": {
+   "file": "assets/animacao-DEFl0xIm.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/assets/AppLayout-3R8-2TCq.js": {
+   "file": "assets/AppLayout-3R8-2TCq.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/assets/Dashboard-CXkD6icK.js": {
+   "file": "assets/Dashboard-CXkD6icK.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/assets/Historico-CgtY0xa_.js": {
+   "file": "assets/Historico-CgtY0xa_.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/assets/index-cPod90T4.css": {
+   "file": "assets/index-cPod90T4.css",
+   "type": "text/css; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/assets/index-Xoo-Dd8d.js": {
+   "file": "assets/index-Xoo-Dd8d.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/assets/Info-EzKVe5tc.js": {
+   "file": "assets/Info-EzKVe5tc.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/assets/Legal-BDlC7wnd.js": {
+   "file": "assets/Legal-BDlC7wnd.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/assets/Numbers-D7B0Pvrf.js": {
+   "file": "assets/Numbers-D7B0Pvrf.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/assets/Order-DaOT7MNO.js": {
+   "file": "assets/Order-DaOT7MNO.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/assets/prefs-BV39Ai2U.js": {
+   "file": "assets/prefs-BV39Ai2U.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/assets/Proxies-CJ3e_hD8.js": {
+   "file": "assets/Proxies-CJ3e_hD8.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/assets/react-DpUMDULK.js": {
+   "file": "assets/react-DpUMDULK.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/assets/Recarga-BUiIez36.js": {
+   "file": "assets/Recarga-BUiIez36.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/assets/Rent-BmIyhn_3.js": {
+   "file": "assets/Rent-BmIyhn_3.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/assets/som-DnoeuHqQ.js": {
+   "file": "assets/som-DnoeuHqQ.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200,
+   "imutavel": true
+  },
+  "/fonts/fonts.css": {
+   "file": "fonts/fonts.css",
+   "type": "text/css; charset=utf-8",
+   "status": 200
+  },
+  "/fonts/s__jetbrainsmono__v24__tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx3cwhsk.woff2": {
+   "file": "fonts/s__jetbrainsmono__v24__tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx3cwhsk.woff2",
+   "type": "font/woff2",
+   "status": 200
+  },
+  "/fonts/s__jetbrainsmono__v24__tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx7cwhsk.woff2": {
+   "file": "fonts/s__jetbrainsmono__v24__tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx7cwhsk.woff2",
+   "type": "font/woff2",
+   "status": 200
+  },
+  "/fonts/s__jetbrainsmono__v24__tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx_cwhsk.woff2": {
+   "file": "fonts/s__jetbrainsmono__v24__tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx_cwhsk.woff2",
+   "type": "font/woff2",
+   "status": 200
+  },
+  "/fonts/s__jetbrainsmono__v24__tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2": {
+   "file": "fonts/s__jetbrainsmono__v24__tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+   "type": "font/woff2",
+   "status": 200
+  },
+  "/fonts/s__jetbrainsmono__v24__tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxPcwhsk.woff2": {
+   "file": "fonts/s__jetbrainsmono__v24__tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxPcwhsk.woff2",
+   "type": "font/woff2",
+   "status": 200
+  },
+  "/fonts/s__jetbrainsmono__v24__tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2": {
+   "file": "fonts/s__jetbrainsmono__v24__tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+   "type": "font/woff2",
+   "status": 200
+  },
+  "/fonts/s__plusjakartasans__v12__LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2": {
+   "file": "fonts/s__plusjakartasans__v12__LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2",
+   "type": "font/woff2",
+   "status": 200
+  },
+  "/fonts/s__plusjakartasans__v12__LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2": {
+   "file": "fonts/s__plusjakartasans__v12__LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2",
+   "type": "font/woff2",
+   "status": 200
+  },
+  "/fonts/s__plusjakartasans__v12__LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2": {
+   "file": "fonts/s__plusjakartasans__v12__LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2",
+   "type": "font/woff2",
+   "status": 200
+  },
+  "/fonts/s__plusjakartasans__v12__LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2": {
+   "file": "fonts/s__plusjakartasans__v12__LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2",
+   "type": "font/woff2",
+   "status": 200
+  },
+  "/fonts/s__spacegrotesk__v22__V8mDoQDjQSkFtoMM3T6r8E7mPb54C-s0.woff2": {
+   "file": "fonts/s__spacegrotesk__v22__V8mDoQDjQSkFtoMM3T6r8E7mPb54C-s0.woff2",
+   "type": "font/woff2",
+   "status": 200
+  },
+  "/fonts/s__spacegrotesk__v22__V8mDoQDjQSkFtoMM3T6r8E7mPb94C-s0.woff2": {
+   "file": "fonts/s__spacegrotesk__v22__V8mDoQDjQSkFtoMM3T6r8E7mPb94C-s0.woff2",
+   "type": "font/woff2",
+   "status": 200
+  },
+  "/fonts/s__spacegrotesk__v22__V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2": {
+   "file": "fonts/s__spacegrotesk__v22__V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2",
+   "type": "font/woff2",
+   "status": 200
+  },
+  "/api/site": {
+   "file": "mirror/api__site.json",
+   "type": "application/json",
+   "status": 200
+  },
+  "/api/catalog/services": {
+   "file": "mirror/api__catalog__services.json",
+   "type": "application/json",
+   "status": 200
+  },
+  "/api/catalog/countries": {
+   "file": "mirror/api__catalog__countries.json",
+   "type": "application/json",
+   "status": 200
+  },
+  "/api/catalog/operators": {
+   "file": "mirror/api__catalog__operators.json",
+   "type": "application/json",
+   "status": 200
+  },
+  "/api/catalog/servers": {
+   "file": "mirror/api__catalog__servers.json",
+   "type": "application/json",
+   "status": 200
+  },
+  "/api/docs/openapi.json": {
+   "file": "mirror/api__docs__openapi.json.json",
+   "type": "application/json",
+   "status": 200
+  },
+  "/api/docs/postman.json": {
+   "file": "mirror/api__docs__postman.json.json",
+   "type": "application/json",
+   "status": 200
+  },
+  "/health": {
+   "file": "mirror/health.json",
+   "type": "application/json",
+   "status": 200
+  },
+  "/api/auth/me": {
+   "file": "mirror/api__auth__me.json",
+   "type": "application/json",
+   "status": 401
+  },
+  "/api/keys": {
+   "file": "mirror/api__keys.json",
+   "type": "application/json",
+   "status": 401
+  },
+  "/api/flag/brazil": {
+   "file": "mirror/api__flag__brazil.png",
+   "type": "image/png",
+   "status": 200
+  },
+  "/api/flag/usa": {
+   "file": "mirror/api__flag__usa.png",
+   "type": "image/png",
+   "status": 200
+  },
+  "/api/flag/ukraine": {
+   "file": "mirror/api__flag__ukraine.svg",
+   "type": "image/svg+xml",
+   "status": 200
+  },
+  "/api/flag/england": {
+   "file": "mirror/api__flag__england.svg",
+   "type": "image/svg+xml",
+   "status": 200
+  },
+  "/api/flag/china": {
+   "file": "mirror/api__flag__china.png",
+   "type": "image/png",
+   "status": 200
+  },
+  "/api/flag/indonesia": {
+   "file": "mirror/api__flag__indonesia.png",
+   "type": "image/png",
+   "status": 200
+  },
+  "/api/flag/india": {
+   "file": "mirror/api__flag__india.png",
+   "type": "image/png",
+   "status": 200
+  },
+  "/api/flag/br": {
+   "file": "mirror/api__flag__br.png",
+   "type": "image/png",
+   "status": 200
+  },
+  "/api/flag/us": {
+   "file": "mirror/api__flag__us.png",
+   "type": "image/png",
+   "status": 200
+  },
+  "/api/flag/pt": {
+   "file": "mirror/api__flag__pt.png",
+   "type": "image/png",
+   "status": 200
+  },
+  "/site.webmanifest": {
+   "file": "mirror/site.webmanifest.json",
+   "type": "application/json",
+   "status": 200
+  },
+  "/robots.txt": {
+   "file": "mirror/robots.txt.txt",
+   "type": "text/plain; charset=utf-8",
+   "status": 200
+  },
+  "/sitemap.xml": {
+   "file": "mirror/sitemap.xml.svg",
+   "type": "image/svg+xml",
+   "status": 200
+  },
+  "/favicon.ico": {
+   "file": "mirror/favicon.ico.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200
+  },
+  "/icone-48.png": {
+   "file": "mirror/icone-48.png.png",
+   "type": "image/png",
+   "status": 200
+  },
+  "/icone-96.png": {
+   "file": "mirror/icone-96.png.png",
+   "type": "image/png",
+   "status": 200
+  },
+  "/icone-192.png": {
+   "file": "mirror/icone-192.png.png",
+   "type": "image/png",
+   "status": 200
+  },
+  "/marca/favicon": {
+   "file": "mirror/marca__favicon.png",
+   "type": "image/png",
+   "status": 200
+  },
+  "/marca/apple": {
+   "file": "mirror/marca__apple.png",
+   "type": "image/png",
+   "status": 200
+  },
+  "/marca/card": {
+   "file": "mirror/marca__card.png",
+   "type": "image/png",
+   "status": 200
+  },
+  "/marca/assinatura": {
+   "file": "mirror/marca__assinatura.png",
+   "type": "image/png",
+   "status": 200
+  },
+  "/marca/simbolo": {
+   "file": "mirror/marca__simbolo.png",
+   "type": "image/png",
+   "status": 200
+  },
+  "/mirror/logo-index.json": {
+   "file": "mirror/logo-index.json",
+   "type": "application/json",
+   "status": 200
+  },
+  "/receber-sms-online": {
+   "file": "receber-sms-online/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200,
+   "html_pronto": true
+  },
+  "/numero-virtual-whatsapp": {
+   "file": "numero-virtual-whatsapp/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200,
+   "html_pronto": true
+  },
+  "/numero-virtual-telegram": {
+   "file": "numero-virtual-telegram/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200,
+   "html_pronto": true
+  },
+  "/numero-virtual-instagram": {
+   "file": "numero-virtual-instagram/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200,
+   "html_pronto": true
+  },
+  "/precos": {
+   "file": "precos/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200,
+   "html_pronto": true
+  },
+  "/perguntas-frequentes": {
+   "file": "perguntas-frequentes/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200,
+   "html_pronto": true
+  },
+  "/sobre": {
+   "file": "sobre/index.html",
+   "type": "text/html; charset=utf-8",
+   "status": 200,
+   "html_pronto": true
+  },
+  "/routes.json": {
+   "file": "routes.json",
+   "type": "application/json",
+   "status": 200
+  },
+  "/sw.js": {
+   "file": "sw.js",
+   "type": "text/javascript; charset=utf-8",
+   "status": 200
+  }
+ }
+}

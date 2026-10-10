@@ -1,0 +1,10 @@
+{
+  "name": "robsonsms",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Site ROBSONSMS (estático, a partir do clone)",
+  "scripts": {
+    "start": "node serve.mjs"
+  }
+}

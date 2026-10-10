@@ -1,0 +1,29 @@
+{
+  "name": "ROBSONSMS — números virtuais para receber SMS",
+  "short_name": "ROBSONSMS",
+  "description": "Alugue um número virtual descartável e receba o código de verificação por SMS em segundos. Pagamento por PIX.",
+  "lang": "pt-BR",
+  "start_url": "/painel",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#04111c",
+  "theme_color": "#0ea5e9",
+  "icons": [
+    {
+      "src": "/icone-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/marca/favicon",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/marca/apple",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

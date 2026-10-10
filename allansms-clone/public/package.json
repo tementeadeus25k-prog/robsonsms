@@ -1,0 +1,10 @@
+{
+  "name": "allansms-clone",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Clone est\u00e1tico de allansms.com (bundle original + API congelada)",
+  "scripts": {
+    "start": "node serve.mjs"
+  }
+}

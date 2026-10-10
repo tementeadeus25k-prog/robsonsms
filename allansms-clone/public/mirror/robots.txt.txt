@@ -1,0 +1,67 @@
+# ALLAN SMS — allansms.com
+#
+# Buscador e robô de IA são bem-vindos nas páginas públicas. O que está
+# fechado abaixo é área de cliente logado: são telas com saldo, número e
+# código de verificação. Isso não tem serventia nenhuma em resultado de
+# busca e não deve sair daqui.
+
+User-agent: *
+Disallow: /painel
+Disallow: /admin
+Disallow: /recarga
+Disallow: /recargas
+Disallow: /numeros
+Disallow: /pedido/
+Disallow: /pedidos
+Disallow: /historico
+Disallow: /afiliados
+Disallow: /perfil
+Disallow: /api/
+Disallow: /r/
+# Link de indicação: mesma página de cadastro repetida com um código na ponta.
+# Deixar indexar cria dezenas de endereços com o mesmo conteúdo, e o buscador
+# passa a escolher sozinho qual mostrar — normalmente o errado.
+Disallow: /cadastro?ref=
+Allow: /
+
+# ---------------------------------------------------------------------
+# Robôs de IA, nomeados um a um.
+#
+# Não é enfeite: vários deles ignoram o "User-agent: *" e só obedecem a uma
+# regra escrita com o nome próprio. Sem estas linhas o site fica de fora das
+# respostas do ChatGPT, do Gemini e do Perplexity — que é onde uma parte das
+# pessoas hoje pergunta "onde recebo SMS de verificação".
+# ---------------------------------------------------------------------
+
+# OpenAI — treino, índice do ChatGPT Search e busca ao vivo durante a conversa
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: anthropic-ai
+Allow: /
+
+# Google — o Google-Extended libera o conteúdo para o Gemini.
+# O Googlebot comum, que alimenta a busca e o resumo de IA, já está no "*".
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity, Apple, Microsoft, Meta e demais
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Bingbot
+User-agent: Amazonbot
+User-agent: meta-externalagent
+User-agent: DuckAssistBot
+User-agent: cohere-ai
+User-agent: YouBot
+Allow: /
+
+Sitemap: https://allansms.com/sitemap.xml

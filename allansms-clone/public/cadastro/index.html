@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALLAN SMS — Números virtuais premium para receber SMS</title>
+    <meta name="description" content="Receba códigos SMS/OTP com números virtuais. Saldo via PIX, entrega instantânea e cobertura global." />
+    <meta name="theme-color" content="#7c3aed" />
+    <meta name="robots" content="index, follow" />
+    <!-- Sem extensão de propósito: /marca/<nome> devolve a arte que o dono
+         subiu no admin, ou a que veio no build se ele não subiu nenhuma. -->
+    <link rel="icon" type="image/png" sizes="512x512" href="/marca/favicon" />
+    <!-- Os tamanhos pequenos são arquivos próprios, e não a arte de 512 encolhida
+         pelo navegador: o redutor do navegador é rápido e grosseiro, e a 16px
+         come os detalhes finos do símbolo. Estes vêm reduzidos com filtro de área. -->
+    <link rel="icon" type="image/png" sizes="48x48" href="/icone-48.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/icone-96.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icone-192.png" />
+    <link rel="apple-touch-icon" href="/marca/apple" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="canonical" href="https://allansms.com/" />
+    <!-- Open Graph / redes sociais.
+         URL absoluta obrigatória: o WhatsApp e o X buscam a imagem de fora do
+         site e não sabem resolver caminho relativo — com "/marca/card" a prévia
+         sai sem imagem nenhuma. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ALLAN SMS" />
+    <meta property="og:url" content="https://allansms.com/" />
+    <meta property="og:title" content="ALLAN SMS — Número virtual para receber SMS na hora" />
+    <meta property="og:description" content="Alugue um número descartável e receba o código de verificação em segundos. WhatsApp, Telegram, Instagram e mais de 400 serviços. Pagamento por PIX, a partir de R$ 0,50." />
+    <meta property="og:image" content="https://allansms.com/marca/card" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="ALLAN SMS — números virtuais para receber SMS" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ALLAN SMS — Número virtual para receber SMS na hora" />
+    <meta name="twitter:description" content="Alugue um número descartável, receba o código em segundos e pague por PIX. Mais de 400 serviços." />
+    <meta name="twitter:image" content="https://allansms.com/marca/card" />
+    <!-- Dados estruturados: é assim que o buscador e o robô de IA entendem
+         QUE COISA este site é, em vez de tentar adivinhar pelo texto. O
+         Organization amarra a marca ao domínio; o Service descreve o que se
+         vende, com faixa de preço em real. -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@graph":[
+      {"@type":"Organization","@id":"https://allansms.com/#org","name":"ALLAN SMS",
+       "url":"https://allansms.com/","logo":"https://allansms.com/marca/favicon",
+       "image":"https://allansms.com/marca/card",
+       "description":"Plataforma brasileira de números virtuais para receber código de verificação por SMS, com pagamento por PIX.",
+       "areaServed":{"@type":"Country","name":"Brasil"},
+       "contactPoint":{"@type":"ContactPoint","contactType":"atendimento ao cliente",
+         "availableLanguage":["Portuguese"],"url":"https://wa.me/558488077221"}},
+      {"@type":"WebSite","@id":"https://allansms.com/#site","url":"https://allansms.com/",
+       "name":"ALLAN SMS","inLanguage":"pt-BR","publisher":{"@id":"https://allansms.com/#org"}},
+      {"@type":"Service","@id":"https://allansms.com/#servico",
+       "name":"Número virtual para receber SMS","serviceType":"Número virtual para verificação por SMS",
+       "provider":{"@id":"https://allansms.com/#org"},
+       "areaServed":{"@type":"Country","name":"Brasil"},
+       "description":"Aluguel de número de telefone por pedido para receber código de verificação (OTP) de WhatsApp, Telegram, Instagram, Google e centenas de outros serviços. Cobrança por código recebido, com estorno automático quando o SMS não chega.",
+       "offers":{"@type":"AggregateOffer","priceCurrency":"BRL","lowPrice":"0.22","highPrice":"27.90",
+         "offerCount":"900","url":"https://allansms.com/precos"}}
+    ]}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- ==== três diferenças em relação ao HTML original, e só estas:
+          1. as fontes vêm desta pasta em vez do Google Fonts, para andar offline;
+          2. saiu o beacon de estatística da Cloudflare (terceiros, só medição);
+          3. um service worker responde os /api com o conteúdo congelado.
+        O bundle (assets/*.js, assets/*.css) não foi tocado um byte. ==== -->
+    <link rel="stylesheet" href="/fonts/fonts.css" media="print" onload="this.media='all'" />
+    <script>
+      // Aplica o tema salvo ANTES do primeiro paint (evita flash).
+      // Padrão = CLARO. Escuro só quando o cliente escolhe no botão de tema.
+      try {
+        if (localStorage.getItem('allansms-theme') === 'dark') {
+          document.documentElement.dataset.theme = 'dark';
+        }
+      } catch {}
+    </script>
+    <script type="module" crossorigin src="/assets/index-Xoo-Dd8d.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-DpUMDULK.js">
+    <link rel="modulepreload" crossorigin href="/assets/animacao-DEFl0xIm.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-cPod90T4.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Resumo do que esta página mostra, para quem não executa JavaScript.
+         O site é uma SPA: sem JS o servidor entrega uma casca vazia, e os
+         robôs de IA (GPTBot, ClaudeBot, PerplexityBot) leem exatamente essa
+         casca — para eles a home tinha 148 caracteres e nenhum título. Este
+         bloco diz a mesma coisa que a página diz depois de carregar, e leva
+         para as páginas de conteúdo, que são HTML por inteiro. -->
+    <noscript>
+      <h1>ALLAN SMS — número virtual para receber SMS</h1>
+      <p>
+        A ALLAN SMS aluga números de telefone reais por alguns minutos para você receber
+        código de verificação por SMS sem entregar o seu número pessoal. Você escolhe o
+        serviço e o país, o código aparece na tela e o pedido se encerra. O pagamento é
+        por PIX, em reais, a partir de R$ 5,00 de saldo — e você só paga pelo código que
+        chegou: pedido que expira sem mensagem é estornado automaticamente.
+      </p>
+      <p>
+        São centenas de serviços no catálogo, entre redes sociais, bancos digitais e
+        aplicativos de transporte e entrega, com preço a partir de alguns centavos por
+        código. O número é alugado, e não seu: quando o pedido fecha ele volta ao estoque,
+        então ele não serve como telefone de recuperação de conta.
+      </p>
+      <ul>
+        <li><a href="/receber-sms-online">Como funciona receber SMS online</a></li>
+        <li><a href="/numero-virtual-whatsapp">Número virtual para WhatsApp</a></li>
+        <li><a href="/numero-virtual-telegram">Número virtual para Telegram</a></li>
+        <li><a href="/numero-virtual-instagram">Número virtual para Instagram</a></li>
+        <li><a href="/precos">Preços por serviço</a></li>
+        <li><a href="/perguntas-frequentes">Perguntas frequentes</a></li>
+        <li><a href="/sobre">Sobre a ALLAN SMS</a></li>
+      </ul>
+    </noscript>
+  
+    <script>
+      // No site original os dados vêm de um backend em /api. Aqui responde o
+      // service worker, com o conteúdo congelado em mirror/. Assim o bundle
+      // roda igualzinho, sem nenhum patch dentro dos arquivos com hash.
+      // O bundle pede os próprios arquivos por caminho absoluto (/assets/...),
+      // então o clone é feito para morar na raiz do domínio — mesmo escopo do SW.
+      if ('serviceWorker' in navigator && !/^file:/.test(location.protocol)) {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' })
+          .then(function () { return navigator.serviceWorker.ready; })
+          .then(function () {
+            // primeira visita: estes fetches já haviam saído antes do worker
+            // entrar no meio, então recarrega uma única vez.
+            if (!navigator.serviceWorker.controller &&
+                !sessionStorage.getItem('clone-recarregou')) {
+              sessionStorage.setItem('clone-recarregou', '1');
+              location.replace(location.href);
+            }
+          })
+          .catch(function (e) { console.warn('[clone] service worker:', e); });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+<defs>
+<linearGradient id="f" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#16a34a"/><stop offset="1" stop-color="#065f46"/></linearGradient>
+<linearGradient id="c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f43f5e"/><stop offset="1" stop-color="#be123c"/></linearGradient>
+<linearGradient id="d" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e5e7eb"/></linearGradient>
+</defs>
+<rect width="64" height="64" rx="14" fill="url(#f)"/>
+<g transform="translate(25 27)">
+<circle r="17" fill="url(#c)"/>
+<circle r="17" fill="none" stroke="#fff" stroke-width="4.2" stroke-dasharray="5.3 7.0" transform="rotate(-8)"/>
+<circle r="11" fill="#e11d48" stroke="#fecdd3" stroke-width="1.4"/>
+<path d="M0-5.6 5.3-1.7 3.3 4.5H-3.3L-5.3-1.7Z" fill="#fff" opacity=".92"/>
+</g>
+<g transform="translate(44 44) rotate(-12)">
+<rect x="-11" y="-11" width="22" height="22" rx="5" fill="url(#d)" stroke="#0f172a" stroke-opacity=".18"/>
+<circle cx="-5" cy="-5" r="2.1" fill="#111827"/><circle cx="5" cy="-5" r="2.1" fill="#111827"/>
+<circle cx="0" cy="0" r="2.1" fill="#111827"/>
+<circle cx="-5" cy="5" r="2.1" fill="#111827"/><circle cx="5" cy="5" r="2.1" fill="#111827"/>
+</g>
+</svg>

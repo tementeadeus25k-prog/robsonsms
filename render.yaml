@@ -1,0 +1,31 @@
+# Blueprint do Render — cria o serviço web grátis com o backend do clone.
+# O deploy em si é feito pela API (POST /v1/services); este arquivo documenta
+# a configuração equivalente e serve para recrear o serviço com
+# `render up` ou pelo botão de blueprint no dashboard.
+services:
+  - type: web
+    name: robsonsms
+    runtime: node
+    plan: free
+    branch: main
+    buildCommand: echo "sem build — roda direto"
+    startCommand: node public/serve.mjs
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: API_BASE
+        value: https://allansms.com
+      - key: API_KEY
+        sync: false            # definida na mão no dashboard (segredo)
+      - key: MODO
+        value: simulado
+      - key: AUTO_PIX
+        value: "1"
+      - key: PIX_AGUARDA_MS
+        value: "6000"
+      - key: ADMIN_EMAIL
+        value: admin@robsonsms.com.br
+      - key: ADMIN_PASSWORD
+        value: admin1234
+      - key: ADMIN_SALDO_INICIAL_CENTS
+        value: "50000"
